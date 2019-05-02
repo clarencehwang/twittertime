@@ -14,6 +14,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
+#Currently needs to run continuously on your machine.
 while True:
     now = datetime.datetime.now() #Update the time.
     tweet = now.strftime("The time is %H:%M:%S. Better get going!") #Let's fix that string.
